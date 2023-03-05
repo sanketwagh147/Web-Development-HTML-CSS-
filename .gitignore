@@ -104,3 +104,7 @@ dist
 .tern-port
 
 /.vscode/**
+
+/"Course Notes"\**
+Course Notes/all-design-guidelines.pdf
+Course Notes/theory-lectures-v2-BEST.pdf
