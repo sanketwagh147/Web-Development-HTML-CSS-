@@ -1,0 +1,127 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+:root {
+  --main-color: #2b8a3e;
+  --main-color-light: #ebfbee;
+  --grey-color: #495057;
+}
+
+/*
+Color scheme:
+  Main: #2b8a3e
+  greys: #495057
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--grey-color);
+  line-height: 1;
+}
+
+.carousel{
+  width: 800px;
+  margin: 100px auto;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 86px;
+  padding: 32px;
+  padding-left: 86px;
+  position: relative;
+
+}
+
+img{
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-text{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color:  var(--main-color-light)
+
+}
+.testimonial-author{
+  font-size: 14px;
+  margin-bottom: 4px;
+  color:  var(--main-color-light)
+
+}
+.testimonial-job{
+  color:  var(--main-color-light);
+  font-size: 12px;
+
+}
+.btn {
+  border: none;
+  background-color: #fff;;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 124px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+svg{
+  stroke: var(--main-color)
+}
+
+.btn-icon{
+  height: 24px;
+  width: 24px;
+}
+
+.btn--left{
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+.btn--right{
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.dots{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+  display: flex;
+  gap: 12px;
+
+}
+.dot{
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot--fill{
+  background-color: var(--main-color);
+}

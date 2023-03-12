@@ -1,0 +1,88 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+:root {
+  --main-color: #2b8a3e;
+  --main-color-light: #51cf66;
+  --grey-color: #495057;
+}
+
+/*
+Color scheme:
+  Main: #2b8a3e
+  greys: #495057
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  display: flex ;
+  font-family: "Inter", sans-serif;
+  color: var(--grey-color);
+  line-height: 1;
+  justify-content: center;
+}
+.pagination{
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn{
+  border: 1px solid var(--main-color);
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+
+}
+.btn:hover{
+  background-color: var(--main-color);
+}
+.btn:hover .btn-icon{
+  stroke: #fff;
+}
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: var(--main-color);
+
+}
+.page-link:link,
+.page-link:visited{
+  font-size: 18px;
+  text-decoration: none;
+  height: 36px;
+  width: 36px;
+  color: var(--grey-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+}
+.page-link:hover,
+.page-link:active,
+.page-link.page-link--current{
+  background-color: var(--main-color);
+  color: #fff;
+
+}
+.dots{
+  color: red;
+
+}
