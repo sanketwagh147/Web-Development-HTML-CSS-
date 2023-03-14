@@ -2,6 +2,7 @@
 -- Typography System 
 */
 :root {
+	--brand-color-darker: #cf711f;
 	--brand-color: #e67e22;
 	--brand-color-1: #ec9a52;
 	--brand-color-3: #fdf2e9;
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Rubik", sans-serif;
 	line-height: 1;
 	font-weight: 400;
 	color: var(--brand-grey-1);
@@ -62,6 +63,7 @@ body {
 	border-radius: 9px;
 	text-decoration: none;
     transition: all 0.3s;
+	font-weight: 600;
 }
 .margin-rg-sm{
     margin-right: 1.8rem !important;
@@ -92,4 +94,34 @@ body {
 }
 .hero-img {
 	width: 100%;
+}
+.delivered-meals{
+	margin-top: 8rem;
+	display: flex;
+	align-items: center;
+	gap:1.6rem;
+}
+
+.delivered-img{
+	display: flex;
+}
+.delivered-img img{
+	height: 4.8rem;
+	width: 4.8rem;
+	border-radius: 50%;
+	margin-right: -1.6rem;
+	border:1px solid var(--brand-color-3)
+}
+.delivered-img img:last-child{
+	margin: 0;
+}
+
+.delivered-text{
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.delivered-text span{
+	color: var(--brand-color-darker);
+	font-weight: 700;
 }
