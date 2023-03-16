@@ -306,3 +306,83 @@ body {
 	height: 3.2rem;
 
 }
+
+.section-meals{
+	padding: 9.6rem 0;
+}
+
+.meal-title{
+	font-size: 2.4rem;
+	color: var(--brand-grey);
+	font-weight: 600;
+	margin-bottom: 3.2rem;
+}
+
+.meal-attributes{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+
+	gap: 2rem
+}
+.meal-attribute{
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.meal{
+	border-radius: 11px;
+	box-shadow: 0 2.4rem 4.8rem rgba(0,0,0, 0.75) ;
+	overflow: hidden;
+}
+
+.meal-img{
+	width: 100%;
+
+}
+
+.meal-tags{
+	display: flex;
+	gap: 0.4rem;
+	margin-bottom: 1.2rem;
+	font-weight: bold;
+}
+
+.meal-content{
+	padding:3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-icon{
+	height: 2.4rem;
+	width: 2.4rem;
+	color: var(--brand-color);
+}
+
+strong{
+	font-weight: 500;
+
+}
+
+.tag{
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	color: #333;
+	border-radius: 100rem;
+}
+
+.tag--vegetarian{
+	background-color: #51cf66;
+
+}
+.tag--vegan{
+	background-color: #18a730;
+
+}
+.tag--paleo{
+	background-color: #d1be46;
+
+}
