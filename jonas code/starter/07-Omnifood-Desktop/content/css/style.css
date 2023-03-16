@@ -336,6 +336,7 @@ body {
 	border-radius: 11px;
 	box-shadow: 0 2.4rem 4.8rem rgba(0,0,0, 0.75) ;
 	overflow: hidden;
+	transition: all 0.4s;
 }
 
 .meal-img{
@@ -385,4 +386,57 @@ strong{
 .tag--paleo{
 	background-color: #d1be46;
 
+}
+
+.list{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+.list-icon{
+	width: 3rem;
+	height: 3rem;
+	color: var(--brand-color);
+}
+
+.list-item{
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	font-size: 1.8rem;
+}
+
+.margin-bottom-md{
+	margin-bottom: 4.8rem !important;
+}
+
+.all-recipes{
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.link:link,
+.link:visited{
+	display: inline-block;
+	color: var(--brand-color);
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	transition: all 0.3s;
+}
+.link:hover,
+.link:active{
+	color: var(--brand-color-darker);
+	/* hide underline on hover trick */
+	border-bottom: 1px solid transparent;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.meal:hover{
+	transform: translate(0, -1rem);
+	box-shadow: 0 3.2rem 6.4rem rgba(0,0,0, 0.5) ;
 }
