@@ -1,0 +1,89 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+:root {
+  --main-color: #2b8a3e;
+  --main-color-light: #51cf66;
+  --grey-color: #495057;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Rubik' sans-serif;
+  color: var(--grey-color);
+}
+.container{
+  margin: 0 auto;
+  width: 1200px;
+
+}
+
+nav{
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+header{
+
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(77, 74, 74, 0.6),rgba(100, 98, 98, 0.6)), url(hero.jpg);
+  background-size: cover;
+  color: #fff;
+}
+.header-container{
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-container-inner{
+  width: 50%;
+}
+
+
+h1{
+  font-size: 52px;
+  line-height: 1.05;
+  margin-bottom: 32px;
+}
+
+p{
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.btn:link,
+.btn:visited{
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 10px;
+}
+
+h2{
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+
+section{
+  padding: 96px 0;
+  background-color: #f7f7f7;
+}

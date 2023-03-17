@@ -1,0 +1,80 @@
+:root {
+    --main-color: #2b8a3e;
+    --main-color-light: #51cf66;
+    --grey-color: #495057;
+    --grey-color--light: #c7c8ca;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 24px;
+    color: var(--grey-color);
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px;
+    grid-template-rows: 80px 1fr;
+    height: 100vh;
+    text-align: center;
+    font-weight: 700;
+}
+
+nav{
+    background-color: var(--main-color);
+    grid-row: 1/ -1;
+    
+}
+
+.aside{
+    color:red;
+}
+section{
+    background-color: #f7f7f7;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    overflow: scroll;
+}
+menu{
+    background-color: var(--main-color-light);
+    color: #fff;;
+    grid-column: 2/ -1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 40px;
+}
+button{
+    display: inline-block;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--grey-color--light);
+    padding: 8px 16px;
+
+}
+button:last-child{
+    background-color: red;
+    margin-left: auto   ;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-color--light);
+    height: 96px;
+    flex-shrink: 0;
+}
+aside{
+    background-color: var(--grey-color--light);
+}
+
+nav,section, main, aside{
+    padding: 24px;
+}
