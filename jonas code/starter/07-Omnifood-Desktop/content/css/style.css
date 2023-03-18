@@ -594,3 +594,10 @@ strong{
 	border-radius: 50%;
 
  }
+ .plan-details{
+	font-size: 1.6rem;
+	line-height: 1.6;
+	text-align: center;
+	grid-column: span 2;
+
+ }
