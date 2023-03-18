@@ -53,6 +53,10 @@ body {
 .grid--4-cols{
 	grid-template-columns: repeat(4, 1fr);
 }
+.grid--5-cols{
+	grid-template-columns: repeat(5, 1fr);
+}
+
 
 .grid--center-vertical{
 	align-items: center;
@@ -128,6 +132,7 @@ body {
 	gap: 9.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
 	background-color: var(--brand-color);
@@ -139,6 +144,10 @@ body {
 	text-decoration: none;
     transition: all 0.3s;
 	font-weight: 600;
+
+	border: none;
+	cursor: pointer;
+
 }
 .margin-rg-sm{
     margin-right: 1.8rem !important;
@@ -612,7 +621,6 @@ strong{
 	background-color: var(--brand-color);
 	box-shadow: 0 2.4rem 4.8rem rgba(0,0,0, 0.75) ;
 	border-radius: 11px;
-	height: 50rem;
 	overflow: hidden;
 	background-image: linear-gradient(to right bottom,#eb984c, var(--brand-color));
  }
@@ -646,3 +654,56 @@ strong{
 	column-gap: 3.2rem;
 	row-gap: 2.4rem;
  }
+
+
+ .cta-form label{
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 500;
+
+   }
+
+.cta-form input, .cta-form select{
+	width: 100%;
+	padding: 1.2rem;
+	font-size: 1.8rem;
+	font-family: inherit;
+	border: none;
+	background-color: var(--brand-color-3);
+	border-radius: 9px;
+	box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+	color: inherit;
+   }
+
+.cta-form input::placeholder{
+	color: #aaa;
+}
+
+
+.btn--form{
+	background-color: #45260a;
+	color: var(--brand-color-3);
+
+	align-self: end;
+	padding: 1.2rem;
+}
+
+.btn--form:hover{
+	background-color: #fff ;
+	color: #555;
+}
+
+*:focus{
+	outline: none;
+	/* outline: 4px solid var(--brand-color-darker); */
+	box-shadow: 0 0 0 0.2rem #e7a46975;
+}
+form *:focus{
+	outline: none;
+	/* outline: 4px solid var(--brand-color-darker); */
+	box-shadow: 0 0 0 0.4rem #d5cbc375;
+}
+
+.footer{
+	padding: 9.6rem 0;
+}
