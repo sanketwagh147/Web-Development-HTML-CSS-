@@ -54,7 +54,7 @@ body {
 	grid-template-columns: repeat(4, 1fr);
 }
 .grid--5-cols{
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 
@@ -612,6 +612,7 @@ strong{
  }
 
  .section-cta{
+	padding: 4.8rem 0 12.8rem 0 ;
 
  }
 
@@ -624,6 +625,7 @@ strong{
 	overflow: hidden;
 	background-image: linear-gradient(to right bottom,#eb984c, var(--brand-color));
  }
+
  .cta-img-box{
 	background-image: linear-gradient(to right bottom,rgba(235, 153, 76, 0.35), rgba(207, 113, 31, 0.35)), url("../img/eating.jpg");
 	background-size: cover;
@@ -704,6 +706,78 @@ form *:focus{
 	box-shadow: 0 0 0 0.4rem #d5cbc375;
 }
 
-.footer{
+/* .footer{
 	padding: 9.6rem 0;
+} */
+
+.footer{
+	padding: 12.8rem;
+	border-top: 1px solid #eee;
+}
+.footer-heading{
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-bottom: 4rem;
+}
+
+.footer-nav{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: #767676;
+	transition: all .3s;
+}
+.footer-link:hover,
+.footer-link:active{
+	color: #767676;
+}
+
+.social-links{
+	list-style: none;
+	display: flex;
+	gap: 2.4rem;
+
+}
+
+.footer-logo{
+	display: block;
+	margin-bottom: 3.2rem;
+}
+
+.social-icon{
+	height: 2.4rem;
+	width: 2.4rem;
+}
+
+.copyright{
+	font-size: 1.4rem;
+	line-height: 1.6;
+	color: #767676;
+	margin-top: auto;
+}
+
+.logo-col{
+	display: flex;
+	flex-direction: column;
+}
+
+address{
+	font-style: normal;
+}
+
+.address-col{
+	font-size: 1.6rem;
+	line-height: 1.6;
+
+}
+
+address p:first-child{
+	margin-bottom: 2.4rem;
 }
