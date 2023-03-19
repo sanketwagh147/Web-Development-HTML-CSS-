@@ -1,0 +1,144 @@
+@media(max-width:84em){
+    .hero{
+        max-width: 120rem;
+    }
+    .heading-primary{
+        font-size: 4.4rem;
+    }
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* widthinPx/16 for em */
+
+@media(max-width: 75em){
+    html{
+        /* 9px / 16 * 100 */
+        font-size: 56.25%;
+    }
+
+    .heading-secondary{
+        font-size: 3.6rem;
+    }
+    .heading-tertiary{
+        font-size: 2.4rem;
+
+    }
+
+    .grid{
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .header{
+        padding: 0 3.2rem;
+    }
+
+    .hero{
+        gap: 4.8rem;
+    }
+
+    .main-nav-list{
+        gap: 3.2rem;
+    }
+
+    .testimonials-container{
+        padding: 9.6rem 3.2rem ;
+    }
+
+}
+
+@media(max-width: 59em){
+    html{
+        /* 8px */
+        font-size: 50%;
+    }
+
+    .hero{
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    .hero-text-box,
+    .hero-img-box{
+        text-align: center;
+    }
+
+
+    hero-img{
+        width: 60%;
+    }
+
+    .delivered-meals{
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    .logos img{
+        height: 2.4rem;
+    }
+
+    .step-number{
+        font-size: 7.4rem;
+    }
+
+    .meal-content{
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    .section-testimonials{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cta{
+        grid-template-columns: 60fr 40fr;
+    }
+
+    .cta-form{
+        grid-template-columns: 1fr;
+
+    }
+
+    .btn--form{
+        margin-top: 1.2rem;
+    }
+
+    .btn-mobile-nav{
+        display: block;
+    }
+
+    .main-nav{
+        background-color: rgba(255, 255, 255, 0.802);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+
+
+
+    }
+
+    .main-nav-list{
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited{
+        font-size: 3rem;
+    }
+    
+
+}
